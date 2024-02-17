@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="w-[100%] py-2 px-4 border border-gray-400 rounded-l-full">
         <input type="text" placeholder="Search" className="w-full outline-none" />
          </div>
-    <button className="p-3 p-4 py-2 border rounded-r-full border-r-gray-400"><IoIosSearch size={"24px"}/></button>
+    <button className="px-4 py-2 border rounded-r-full border-r-gray-500"><IoIosSearch size={"24px"}/></button>
 </div>
 
 
