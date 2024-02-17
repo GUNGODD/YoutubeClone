@@ -5,6 +5,8 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import Avatar from 'react-avatar';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineVideoCall } from "react-icons/md";
+import { IoIosSearch } from "react-icons/io";
+
 
 const Navbar = () => {
       
@@ -23,14 +25,14 @@ const Navbar = () => {
     <div className="w-[100%] py-2 px-4 border border-gray-400 rounded-l-full">
         <input type="text" placeholder="Search" className="w-full outline-none" />
          </div>
-    <button className="p-3 py-2 border rounded-r-full border-r-gray-400">Search</button>
+    <button className="p-3 p-4 py-2 border rounded-r-full border-r-gray-400"><IoIosSearch size={"24px"}/></button>
 </div>
 
 
-                        <div className="flex items-center ">
-                              <IoIosNotificationsOutline size={"23px"} />
-                              <MdOutlineVideoCall size={"23px"} />
-                           <Avatar src="http://m.gettywallpapers.com/wp-content/uploads/2023/09/Solo-Leveling-pfp.jpg" size="30" round={true} />
+                        <div className="flex w-[10%] justify-between items-center ">
+                              <IoIosNotificationsOutline size={"24px"}  className="cursor-pointer"/>
+                              <MdOutlineVideoCall size={"24px"} className="cursor-pointer" />
+                           <Avatar src="http://m.gettywallpapers.com/wp-content/uploads/2023/09/Solo-Leveling-pfp.jpg" size="24" round={true} />
                               </div>
                               
                               </div>
