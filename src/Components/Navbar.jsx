@@ -10,28 +10,31 @@ const Navbar = () => {
       
       return (
             <>
-                  <div className="flex justify-between">
+                  <div >
+                        <div className="flex justify-between px-5" > 
                         
                         <div className="flex items-center">
                               
-                              <GiHamburgerMenu />
-                              <img width={ 115} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1920px-YouTube_Logo_2017.svg.png" alt="" />
+                              <GiHamburgerMenu size={"24px"} />
+                              <img className="px-4" width={ 115} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1920px-YouTube_Logo_2017.svg.png" alt="" />
 
                         </div>
-                        <div className="flex">  {/* input section */}
-                              <div>
-                              <input type="text" className="border border-gray-200 outline-none"/>
+                        <div className="flex w-[40%] items-center w ">  {/* input section */}
+                              <div className="w-[100%] border border-gray-400">
+                              <input type="text" placeholder="Search" className="w-full border outline-non order-gray-200"/>
                         </div>
                         
                         
                               <button>Search</button>
                         
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex items-center ">
                               <IoIosNotificationsOutline size={"23px"} />
                               <MdOutlineVideoCall size={"23px"} />
-                           <Avatar src="http://m.gettywallpapers.com/wp-content/uploads/2023/09/Solo-Leveling-pfp.jpg" size="50" round={true} />
-                        </div>
+                           <Avatar src="http://m.gettywallpapers.com/wp-content/uploads/2023/09/Solo-Leveling-pfp.jpg" size="30" round={true} />
+                              </div>
+                              
+                              </div>
                         </div>
                   
             </>
