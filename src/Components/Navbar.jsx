@@ -1,4 +1,3 @@
-
 import { IoIosNotificationsOutline } from "react-icons/io";
 import Avatar from "react-avatar";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -8,8 +7,8 @@ import { IoIosSearch } from "react-icons/io";
 const Navbar = () => {
   return (
     <>
-      <div>
-        <div className="flex justify-between px-4 py-2">
+      <div className="fixed top-0 bg-white flex justify-center items-center w-[100%] z-10 ">
+        <div className="flex w-[96%] justify-between  py-3 items-center">
           {" "}
           {/* Adjusted padding */}
           <div className="flex items-center">

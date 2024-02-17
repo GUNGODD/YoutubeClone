@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex ">
+      <div className="flex mt-16">
         <Sidebar />
-        hello i am here 
+       
         <Feed/>
       </div>
     </>
