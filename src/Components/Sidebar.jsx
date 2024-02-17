@@ -154,7 +154,7 @@ const SidebarItems = [
 export default function Sidebar() {
   return (
         <>
-              <div className="absolute left-0 w-auto p-5 ml-6 overflow-y-scroll h-verflow-x-hidden h-[calc(100vh-4.625rem)] bg-white">
+              <div className="  fixed *:relative left-0 w-auto p-5 ml-6 overflow-y-scroll h-verflow-x-hidden h-[calc(100vh-4.625rem)] bg-white">
                   
     {SidebarItems.map((item, index) => {
         return (
@@ -162,7 +162,8 @@ export default function Sidebar() {
                    
                 {item.icons}
                 <p className="pl-5">{item.title}</p>
-            </div>
+              </div>
+              
         );
     })}
 </div>
