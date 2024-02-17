@@ -19,15 +19,13 @@ const Navbar = () => {
                               <img className="px-4" width={ 115} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1920px-YouTube_Logo_2017.svg.png" alt="" />
 
                         </div>
-                        <div className="flex w-[40%] items-center w ">  {/* input section */}
-                              <div className="w-[100%] py-2 px-4 border border-gray-400">
-                              <input type="text" placeholder="Search" className="w-full border outline-non order-gray-200"/>
-                        </div>
-                        
-                        
-                              <button>Search</button>
-                        
-                        </div>
+                        <div className="flex w-[40%] items-center"> {/* input section */}
+    <div className="w-full px-1 py-2 border border-gray-400">
+        <input type="text" className="w-full border-none outline-none" />
+    </div>
+    <button>Search</button>
+</div>
+
                         <div className="flex items-center ">
                               <IoIosNotificationsOutline size={"23px"} />
                               <MdOutlineVideoCall size={"23px"} />
