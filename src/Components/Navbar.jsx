@@ -20,11 +20,12 @@ const Navbar = () => {
 
                         </div>
                         <div className="flex w-[40%] items-center"> {/* input section */}
-    <div className="w-full px-1 py-2 border border-gray-400">
-        <input type="text" className="w-full border-none outline-none" />
-    </div>
-    <button>Search</button>
+    <div className="w-[100%] py-2 px-4 border border-gray-400 rounded-l-full">
+        <input type="text" placeholder="Search" className="w-full outline-none" />
+         </div>
+    <button className="p-3 py-2 border rounded-r-full border-r-gray-400">Search</button>
 </div>
+
 
                         <div className="flex items-center ">
                               <IoIosNotificationsOutline size={"23px"} />
