@@ -5,7 +5,7 @@ export default function Feed (){
             <>
             
             <div>
-              <h1>Feed</h1>
+             feed
             </div>
             
             </>
