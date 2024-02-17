@@ -20,7 +20,7 @@ const Navbar = () => {
 
                         </div>
                         <div className="flex w-[40%] items-center w ">  {/* input section */}
-                              <div className="w-[100%] border border-gray-400">
+                              <div className="w-[100%] py-2 px-4 border border-gray-400">
                               <input type="text" placeholder="Search" className="w-full border outline-non order-gray-200"/>
                         </div>
                         
