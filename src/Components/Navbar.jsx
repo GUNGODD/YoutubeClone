@@ -3,8 +3,16 @@ import Avatar from "react-avatar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineVideoCall } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [open, SetOpen] = useState(false);
+  const handleToggle = () => {
+    SetOpen(!open); // !open vlaue will be  false , if a onClick event occurs 
+    console.log(open);
+  }
+
+  
   return (
     <>
       <div className="fixed top-0 bg-white flex justify-center items-center w-[100%] z-10 ">
@@ -12,7 +20,7 @@ const Navbar = () => {
           {" "}
           {/* Adjusted padding */}
           <div className="flex items-center">
-            <GiHamburgerMenu size={"24px"} />
+            <GiHamburgerMenu size={"24px"} onClick={handleToggle} />
             <img
               className="px-4"
               width={115}

@@ -1,3 +1,4 @@
+import ButtonList from "./ButtonList";
 
 export default function Feed (){
       return (
@@ -5,7 +6,7 @@ export default function Feed (){
             <>
             
             <div>
-            feed
+           <ButtonList/>
             </div>
             
             </>
