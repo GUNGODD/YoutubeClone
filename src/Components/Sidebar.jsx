@@ -110,6 +110,9 @@ const SidbarIcons = [
   },
 ];
 const Sidebar = () => {
+  
+  const open = true;
+  
   return (
     <>
       <div className=" relative w-auto  px-5 overflow-y-auto bg-white h-[calc(100vh-4.625rem)] oerflow-x-hidden h-ml-6">
@@ -117,7 +120,7 @@ const Sidebar = () => {
           return (
             <div key={index} className="flex my-3">
               {item.Icons}
-              <p className="ml-4">{item.title}</p>
+              <p className={`ml-5 ${open ? "": 'hidden'} `}>{item.title}</p>
             </div>
           );
         })}

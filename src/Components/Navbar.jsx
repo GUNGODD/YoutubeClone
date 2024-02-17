@@ -3,13 +3,13 @@ import Avatar from "react-avatar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineVideoCall } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
-import { useState } from "react";
+import {useDispatch} from 'react-redux'
 
 const Navbar = () => {
-  const [open, SetOpen] = useState(false);
-  const handleToggle = () => {
-    SetOpen(!open); // !open vlaue will be  false , if a onClick event occurs 
-    console.log(open);
+  const dispatch = useDispatch();
+  const toggleHandler = () => {
+    dispatch(toggleSidebar());
+   
   }
 
   
@@ -20,7 +20,7 @@ const Navbar = () => {
           {" "}
           {/* Adjusted padding */}
           <div className="flex items-center">
-            <GiHamburgerMenu size={"24px"} onClick={handleToggle} />
+            <GiHamburgerMenu size={"24px"} onClick={toggleHandler} />
             <img
               className="px-4"
               width={115}
