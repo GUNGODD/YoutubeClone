@@ -154,14 +154,14 @@ const SidebarItems = [
 export default function Sidebar() {
   return (
         <>
-              <div className="ml-4">
+              <div className="absolute left-0 w-auto p-5 calc[100vh-4.625rem]  bg-white overflow-x-hidden rflow-scroll absml-6">
                   
     {SidebarItems.map((item, index) => {
         return (
-              <div className="flex my-1" key={index}>
+              <div className="flex my-4" key={index}>
                    
                 {item.icons}
-                <p>{item.title}</p>
+                <p className="pl-5">{item.title}</p>
             </div>
         );
     })}
