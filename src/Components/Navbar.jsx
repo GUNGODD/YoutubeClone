@@ -15,7 +15,7 @@ const Navbar = () => {
                   <div >
                         <div className="flex justify-between px-5" > 
                         
-                        <div className="flex items-center">
+                        <div className="flex items-center py-5">
                               
                               <GiHamburgerMenu size={"24px"} />
                               <img className="px-4" width={ 115} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1920px-YouTube_Logo_2017.svg.png" alt="" />
