@@ -5,62 +5,97 @@ import { MdOutlineSubscriptions } from "react-icons/md";
 
 const SidbarIcons = [
   {
-    Icons: <GoHomeFill />,
+    Icons: <GoHomeFill size="24px" />,
     title: "Home",
   },
   {
-    Icons: <SiYoutubeshorts />,
+    Icons: <SiYoutubeshorts size="24px" />,
     title: "Short",
   },
   {
-    Icons: <MdOutlineSubscriptions />,
+    Icons: <MdOutlineSubscriptions size="24px" />,
     title: "Subscription",
   },
   {
-    Icons: <GoHomeFill />,
+    Icons: <GoHomeFill size="24px" />,
     title: "Home",
   },
   {
-    Icons: <SiYoutubeshorts />,
+    Icons: <SiYoutubeshorts size="24px" />,
     title: "Short",
   },
   {
-    Icons: <MdOutlineSubscriptions />,
+    Icons: <MdOutlineSubscriptions size="24px" />,
     title: "Subscription",
   },
   {
-    Icons: <GoHomeFill />,
+    Icons: <GoHomeFill size="24px" />,
     title: "Home",
   },
   {
-    Icons: <SiYoutubeshorts />,
+    Icons: <SiYoutubeshorts size="24px" />,
     title: "Short",
   },
   {
-    Icons: <MdOutlineSubscriptions />,
+    Icons: <MdOutlineSubscriptions size="24px" />,
     title: "Subscription",
   },
   {
-    Icons: <GoHomeFill />,
+    Icons: <GoHomeFill size="24px" />,
     title: "Home",
   },
   {
-    Icons: <SiYoutubeshorts />,
+    Icons: <SiYoutubeshorts size="24px" />,
     title: "Short",
   },
   {
-    Icons: <MdOutlineSubscriptions />,
+    Icons: <MdOutlineSubscriptions size="24px" />,
+    title: "Subscription",
+  },
+  {
+    Icons: <GoHomeFill size="24px" />,
+    title: "Home",
+  },
+  {
+    Icons: <SiYoutubeshorts size="24px" />,
+    title: "Short",
+  },
+  {
+    Icons: <MdOutlineSubscriptions size="24px" />,
+    title: "Subscription",
+  },
+  {
+    Icons: <GoHomeFill size="24px" />,
+    title: "Home",
+  },
+  {
+    Icons: <SiYoutubeshorts size="24px" />,
+    title: "Short",
+  },
+  {
+    Icons: <MdOutlineSubscriptions size="24px" />,
     title: "Subscription",
   },
 ];
 const Sidebar = () => {
   return (
     <>
-      <div className="ml-4 ">
-        <div className="flex my-2">
-          <GoHomeFill size={"24px"} />
-          <p>Home</p>
-        </div>
+              <div className="ml-4 ">
+                    {
+                          SidbarIcons.map((item, index) => {
+                                return (
+                                      <div key={ index} className="flex my-3">
+                                    {item.Icons} 
+                                            <p>{ item.title}</p>
+                                  </div>
+                                );
+                                    
+                          })
+                    }
+                    
+
+                    
+      
 
       </div>
     </>
