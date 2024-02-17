@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <div className='flex '>  {/* so that we can use sibar along with cart */}
         <Sidebar />
-         video render here..
+        <p className='p-2'>video will render here </p>
       </div>
     </>
   )

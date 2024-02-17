@@ -3,9 +3,9 @@ export default function Sidebar() {
   return (
         <>
               <div>
-                    <div>
-                          <FiHome />
-                          title
+                    <div className="flex">
+                          <FiHome  size={"24px"}/>
+                          <p>Home</p>
                     </div>
         </div>
         
