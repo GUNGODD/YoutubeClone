@@ -1,22 +1,24 @@
 import { FiHome } from "react-icons/fi";
+import { SiYoutubeshorts } from "react-icons/si";
+import { MdOutlineSubscriptions } from "react-icons/md";
 export default function Sidebar() {
   return (
         <>
-              <div className="border-gray-800 w-[12%]  ml-4">
+              <div className="ml-4">
                     
-                    <div className="flex w-[50%]  my-1 justify-between ">
+                    <div className="flex my-1 ">
                           <FiHome size={"24px"}/>
                           <p>Home</p>
                     </div>
 
-                    <div className="flex w-[50%] my-1  justify-between ">
-                          <FiHome size={"24px"}/>
-                          <p>Home</p>
+                    <div className="flex my-1 ">
+                          <SiYoutubeshorts size={"24px"}/>
+                          <p>Short</p>
                     </div>
 
-                    <div className="flex w-[50%]  my-1 justify-between ">
-                          <FiHome size={"24px"}/>
-                          <p>Home</p>
+                    <div className="flex my-1 ">
+                          < MdOutlineSubscriptions  size={"24px"}/>
+                          <p>Subscription</p>
                     </div>
         </div>
         
