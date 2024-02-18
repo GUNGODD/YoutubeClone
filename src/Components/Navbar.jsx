@@ -6,10 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import {useDispatch} from 'react-redux'
 
 const Navbar = () => {
-  const dispatch = useDispatch();
-  const toggleHandler = () => {
-    dispatch(toggleSidebar());
-   
+
   }
 
   
@@ -20,7 +17,7 @@ const Navbar = () => {
           {" "}
           {/* Adjusted padding */}
           <div className="flex items-center">
-            <GiHamburgerMenu size={"24px"} onClick={toggleHandler} />
+            <GiHamburgerMenu size={"24px"}  />
             <img
               className="px-4"
               width={115}
@@ -63,6 +60,6 @@ const Navbar = () => {
       </div>
     </>
   );
-};
+
 
 export default Navbar;
