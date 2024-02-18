@@ -3,11 +3,10 @@ import Avatar from "react-avatar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineVideoCall } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
-import {useDispatch} from 'react-redux'
 
 const Navbar = () => {
 
-  }
+  
 
   
   return (
@@ -61,5 +60,5 @@ const Navbar = () => {
     </>
   );
 
-
+}
 export default Navbar;
