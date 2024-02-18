@@ -93,8 +93,4 @@ const Sidebar = () => {
     </>
   );
 };
-<<<<<<< HEAD
 export default Sidebar;
-=======
-export default Sidebar;
->>>>>>> main
