@@ -15,8 +15,8 @@ const Navbar = () => {
         <div className="flex w-[96%] justify-between  py-3 items-center">
           {" "}
           {/* Adjusted padding */}
-          <div className="flex items-center">
-            <GiHamburgerMenu size={"24px"}  />
+          <div className="flex items-center drawer-toggle">
+            <GiHamburgerMenu  size={"24px"}  />
             <img
               className="px-4"
               width={115}
@@ -26,8 +26,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center w-2/5">
             {" "}
-            {/* Adjusted width and padding */}
-            {/* input section */}
+           
             <div className="w-full px-2 py-2 border border-gray-400 rounded-l-full">
               {" "}
               {/* Adjusted padding */}

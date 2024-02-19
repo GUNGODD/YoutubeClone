@@ -80,12 +80,12 @@ const SidebarIcons = [
 const Sidebar = () => {
   return (
     <>
-      <div className=" relative w-auto  px-5 overflow-y-auto bg-white h-[calc(100vh-4.625rem)] oerflow-x-hidden h-ml-6">
+      <div className="   relative w-auto  px-5 overflow-y-auto bg-white h-[calc(100vh-4.625rem)] oerflow-x-hidden h-ml-6">
         {SidebarIcons.map((item, index) => {
           return (
-            <div key={index} className="flex my-4">
+            <div key={index} className="flex p-2 ">
               {item.Icons}
-              <p>{item.title}</p>
+              <p className="ml-5">{item.title}</p>
             </div>
           );
         })}
